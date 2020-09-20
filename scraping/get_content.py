@@ -1,4 +1,5 @@
 import requests
+import time
 from bs4 import BeautifulSoup
 
 url = ["https://myanimelist.net/anime/35849/Darling_in_the_FranXX?q=Darlin&cat=anime","https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood"]
