@@ -1,5 +1,6 @@
 import requests
 import time
+from tqdm import tqdm
 from bs4 import BeautifulSoup
 
 url = ["https://myanimelist.net/anime/35849/Darling_in_the_FranXX?q=Darlin&cat=anime","https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood"]
@@ -7,7 +8,7 @@ url = ["https://myanimelist.net/anime/35849/Darling_in_the_FranXX?q=Darlin&cat=a
 
 def get_content(url, content="Studios:"):#Url will be an object
   dataReturn = []
-  for x in url:
+  for x in tqdm(url):
     html = requests.get(x).content
     soup = BeautifulSoup(html, features="html.parser")
     try:
