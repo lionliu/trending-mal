@@ -50,4 +50,4 @@ def get_content(animeId):
         time.sleep(4)
     return (dataReturn)
 
-print( get_content([28891,2265,34599,35849]) )
+#print( get_content([28891,2265,34599,35849]) )
