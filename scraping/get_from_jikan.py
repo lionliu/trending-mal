@@ -5,11 +5,11 @@ from tqdm import tqdm
 def get_content(animeId):
     apiLink = 'https://api.jikan.moe/v3/anime/'
     dataReturn = {
-        "rank" : [],
+        "ranked" : [],
         "score" : [],
         "popularity" : [],
         "members" : [],
-        "studio" : [],
+        "studios" : [],
         "source" : [],
         "favorites" : [] 
     }
