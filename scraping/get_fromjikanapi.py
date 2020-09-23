@@ -33,6 +33,7 @@ def get_content(animeId):
             dataReturn["studio"].append([])
             dataReturn["source"].append("")
             dataReturn["favorites"].append(0)
+        time.sleep(2)
     return (dataReturn)
 
 print( get_content([28891,23273,34599,35849]) )
